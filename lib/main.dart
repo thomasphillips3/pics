@@ -7,14 +7,17 @@ void main() {
         title: Text('Show me yer pics!'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: saySumn
-              ),
-            ),
-          );
-        
-          runApp(app);
-        }
-        
-        void saySumn() {
-          print('what up doe');
+        onPressed: fetchPic,
+        child: Icon(
+          Icons.add_circle
+        ),
+        ),
+    ),
+  );
+
+  runApp(app);
+}
+
+void fetchPic() {
+  print('what up doe');
 }
